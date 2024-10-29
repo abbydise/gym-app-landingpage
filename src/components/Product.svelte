@@ -5,17 +5,17 @@
         {
             featureList: ['Daily streak counter', 'Weights and reps tracker', 'Community challenges', 'Every workout is new and exciting'],
             description: 'Swoley moley ensures all users have the information they need to train safely and train effectively.',
-            imgUrl: 'assets/selection.png'
+            imgUrl: "assets/selection.png"
         },
         {
             featureList: ['Select your preferences', 'Personalize your workouts', 'Customize your training', 'Guarantees progress on all core exercises'],
             description: 'Build your streaks and see your progress with our amazing tracking and analytics features.',
-            imgUrl: 'assets/training.png'
+            imgUrl: "assets/training.png"
         },
         {
             featureList: ['Eliminating guesswork', 'Save time', 'Achieve the performance you seek', 'Builds functional strength'],
             description: 'Enter as much information about yourself as you desire to ensure all workouts are personalized to your every need.',
-            imgUrl: 'assets/goal.png'
+            imgUrl: "assets/goal.png"
         },
     ];
 </script>
@@ -28,7 +28,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-14 lg:gap-20 relative text-base">
             {#each productFeature as productFeatures, index}
-                <ProductCard productFeature={productFeature} index={index}>
+                <ProductCard {productFeature} {index}>
                     {#if index === 0}
                     Experience a beginner exercise <span class="text-indigo-400 font-medium">master</span> class
                     {:else if index === 1}
