@@ -1,6 +1,6 @@
 <script>
     export let index;
-    export let productFeature
+    export let productFeature;
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-14 lg:gap-20 relative text-base">
@@ -21,7 +21,7 @@
         {/each}
     </div>
     <div class="flex items-center">
-        <button class="specialBtnDark mr-auto font-semibold"><p>Try free today</p></button>
+        <button class="specialBtnDark mr-auto font-semibold"><p>Try free today &rarr;</p></button>
     </div>
     </div>
     <div class={"flex flex-col dropShadow overflow-hidden rounded-b-lg" + (index % 2 === 1 ? " order-2" : '')}>
